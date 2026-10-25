@@ -32,12 +32,12 @@ You need a Cloudflare account with Zero Trust enabled (the free plan is fine) an
 
 Copy the token right away, Cloudflare only shows it once.
 
-**3. Put the code in your own repo** (fork it, clone it, or copy the files), then add two secrets under *Settings > Secrets and variables > Actions*:
+**3. Fork this repository** with the *Fork* button at the top right, then add two secrets in your fork under *Settings > Secrets and variables > Actions*:
 
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
 
-Use exactly these names, the workflows read them.
+Use exactly these names, the workflows read them. GitHub disables workflows in new forks, so open the *Actions* tab of your fork and enable them first.
 
 **4. Run it once by hand.** Open the *Actions* tab, pick *Cloudflare Hagezi Sync* and press *Run workflow*. Check the log: you should see a line starting with `Plan:` on the first run and `up to date` on the second.
 
